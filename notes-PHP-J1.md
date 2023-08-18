@@ -79,8 +79,24 @@ class User {}
 $u = new User();
 var_dump($u); // object(User)#identifiant_unique (nombre_de_propriétés)
 ```
-	Type conversion
+## Type conversion
+pour convertir d'un type à un autre, il suffit de préciser l'opérateur de conversion explicite.
+
+```php
+$floatNum = 3.14;
+$intNum = (int)$floatNum; // on obtient un entier
+$x = (int)3.14;
+```
+En plus, nous pouvons utiliser les fonctions php natives telles que
+*intval()*, *floatval()*, *boolval()* ...
+```php
+$floatNum = 3.14;
+$intNum = intval($floatNum); // (int)3
+
+$y = floatval(3); // (float)3.0
+```
 ## conditions
+Les conditions en PHP sont identiques au JS, et on y retrouve les mêmes opérateurs de comparaison tels que: <,  <=,  >,  >=,  !=,  ==,  ===, !==
 ### if, if...else, if...else...else if
 ### switch
 ## boucles
